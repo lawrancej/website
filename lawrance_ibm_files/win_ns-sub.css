@@ -1,0 +1,35 @@
+td, body, input { font-family: Arial,Tahoma,Helvetica,sans-serif; font-size: 12px; color: black; } 
+body { margin: 0px; background-color: #e1e4f0; background-image: url(../_images/img-bg.gif); background-repeat: repeat-x; } 
+
+.bodytext { line-height: 20px; } 
+.normalheight { line-height: normal; } 
+.smalltext { font-family: Verdana; font-size: 10px; } 
+.bodyheading { color: #334477; font-weight: bold; font-size: 12px; }
+.boldtext { color:#cc5500; font-weight: bold; }
+.heading { color: #334477; font-size: 18px; }
+.navblank { color: #334477; font-size: 11px; }
+.navselect { color: #cc5500; font-size: 11px; } 
+
+A:link, A:visited, A:active { text-decoration: underline; color:#2b365e } 
+A:hover { text-decoration: none; color:#cc5500 } 
+
+A.navheading:link, A.navheading:visited, A.navheading:active { text-decoration: none; color: #999999; font-size: -2; font-weight: bold; } 
+A.navheading:hover { text-decoration: none; color: #999999; }
+
+A.navlink:link, A.navlink:visited, A.navlink:active { text-decoration: underline; color: #2b365e; font-size: 12px; } 
+A.navlink:hover { text-decoration: none; color: #cc5500; } 
+
+A.whitelink:link, A.whitelink:visited, A.whitelink:active { text-decoration: none; color: #e6e6e6; font-size: 11px; } 
+A.whitelink:hover { text-decoration: underline } 
+
+caption {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-left: 15px;
+	margin-right: 15px;
+	font-size: 9px;
+	color: #333333;
+	font-style: italic;
+	font-weight: normal;
+	background-color: #F0F0F0;
+}
+
