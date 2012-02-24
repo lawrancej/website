@@ -1,13 +1,13 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head profile="http://microformats.org/wiki/hresume-profile/ http://purl.org/uF/2008/03/ http://gmpg.org/xfn/11 ">
-  <link type="text/css" href="css/flick/jquery-ui-1.8.1.16.custom.css" rel="stylesheet" />
+  <link type="text/css" href="css/flick/jquery-ui-1.8.16.custom.css" rel="stylesheet">
   <script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
   <script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
   <script type="text/javascript">
-//$(function(){
-//$('#tabs').tabs();
-//});
+$(function(){
+$('#tabs').tabs();
+});
   </script>
   <meta content="text/html; charset=UTF-8" http-equiv="content-type">
   <meta name="Description" content="Joseph Lawrance is a postdoctoral researcher at MIT.">
@@ -21,10 +21,19 @@
 </head>
 <body>
 <div class="hresume">
+  <h1>Joseph Lawrance, Ph.D.</h1>
+  <div id="tabs">
+  <ul>
+    <li><a href="#contact-info">Overview</a></li>
+    <li><a href="#teaching">Teaching</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#etc">Etc.</a></li>
+  </ul>
   <div class="contact vcard" id="contact-info">
-    <h1 class="fn n" id="joey-name">
+    <h2 class="fn n" id="joey-name" style="display: none;">
       <span class="given-name">Joseph</span> <span class="family-name">Lawrance</span>, <span class="honorific-suffix">Ph.D.</span>
-    </h1>
+    </h2>
     <img style="float:left; margin-right:4px" src="me.jpg" alt="Joey Lawrance" class="photo" width="72" height="72">
     <a class="title" href="http://www.wit.edu/catalog//2011-Catalog/trustees-faculty-admin/Faculty.html">Assistant Professor</a><br>
     <a href="http://www.wit.edu/"  class="org">Wentworth Institute of Technology</a>
@@ -35,13 +44,12 @@
       <a class="url" href="http://www.linkedin.com/in/joeylawrance" rel="me">LinkedIn profile</a><br>
       Email: <a class="email" href="mailto:joey.lawrance@gmail.com">joey.lawrance@gmail.com</a>
     </div>
-  </div>
-  <h2>Overview</h2>
   <p class="summary">I earned my Ph.D. at Oregon State University, under the direction of <a href="http://web.engr.oregonstate.edu/%7Eburnett/" rel="contact colleague">Dr. Margaret Burnett</a>.
   I was <a href="lawrance_ibm.html">awarded an IBM Ph.D. Scholarship</a> for my research on
   applying <a href="http://en.wikipedia.org/wiki/Information_foraging">information foraging theory</a> to debugging.</p>
   <a href="JosephLawranceResume.pdf">Curriculum Vitae (PDF)</a>
-  <h2>Publications</h2>
+  </div>
+  <div id="publications">
   <h3>Theses</h3>
   <ol>
   <li><a href="http://ir.library.oregonstate.edu/jspui/bitstream/1957/11994/1/Lawrance_dissertation.pdf"><cite>Information Foraging in Debugging.</cite></a> Ph.D. Thesis. 2009.</li>
@@ -83,35 +91,8 @@ Theory Perspective</cite></a>, IBM Technical Report RC24783, April 2009.
   <ol start="20">
   <li>Scaffidi, C., Fleming, S., Piorkowski, D., Burnett, M., Bellamy, R., Lawrance, J. Unifying Software Engineering Methods and Tools: Principles and Patterns from Information Foraging Theory. <span style="font-style: italic;">Transactions on Software Engineering</span> (submitted).</li>
   </ol>
-  <h2>Education</h2>
-  <ul class="vcalendar">
-    <li class="education vevent vcard">
-      <object data="#joey-name" class="include"></object>
-      <a href="http://eecs.oregonstate.edu/" class="org">Oregon State University</a>,
-      <span class="summary"><span class="title">Ph.D.</span> Computer Science</span>.
-      <span class="date_duration">
-        <abbr class="dtstart" title="2003-09-01">September 2003</abbr> - <abbr class="dtend" title="2009-06-01">June 2009</abbr>
-      </span>
-    </li>
-    <li class="education vevent vcard">
-      <object data="#joey-name" class="include"></object>
-      <a href="http://eecs.oregonstate.edu/" class="org">Oregon State University</a>,
-      <span class="summary"><span class="title">Master's of Science</span> Computer Science</span>.
-      <span class="date_duration">
-        <abbr class="dtstart" title="2003-09-01">September 2003</abbr> - <abbr class="dtend" title="2005-06-01">June 2005</abbr>
-      </span>
-    </li>
-    <li class="education vevent vcard">
-      <object data="#joey-name" class="include"></object>
-      <a href="http://www.lawrence.edu/" class="org">Lawrence University</a>,
-      <span class="summary"><span class="title">Bachelor of Arts</span> Computer Science</span>.
-      <span class="date_duration">
-        <abbr class="dtstart" title="1999-09-01">September 1999</abbr> - <abbr class="dtend" title="2003-06-01">June 2003</abbr>
-      </span>
-    </li>
-  </ul>
-  <h2>Experience</h2>
-  <h3>Research</h3>
+  </div>
+  <div id="research">
   <ul class="vcalendar">
     <li class="experience vevent vcard">
       <object data="#joey-name" class="include"></object>
@@ -157,7 +138,8 @@ Conducted research aimed at understanding the needs of end users and assisting e
       <div class="description">Developed a Japanese-English cross-language Web-based information retrieval system (search engine) using <a href="http://lucene.apache.org/">Apache Lucene</a>, for Tsunami research.</div>
     </li>
   </ul>
-  <h3>Teaching</h3>
+  </div>
+  <div id="teaching">
   <ul class="vcalendar">
     <li class="experience vevent vcard">
       <object data="#joey-name" class="include"></object>
@@ -167,11 +149,11 @@ Conducted research aimed at understanding the needs of end users and assisting e
       <div class="description">Taught:
 	<ul>
 	<li>COMP114 (Structured Programming for Engineering and Technology)</li>
-	<li><a href="COMP278">COMP278 (Computer Architecture)</a></li>
 	<li><a href="COMP120">COMP120 (Computer Science I in C)</a></li>
-	<li><a href="COMP685">COMP685 (Computer Science Seminar)</a></li>
-	<li>COMP566 (Software Engineering)</li>
+	<li><a href="COMP278">COMP278 (Computer Architecture)</a></li>
         <li><a href="COMP285">COMP285 (OOP)</a></li>
+	<li>COMP566 (Software Engineering)</li>
+	<li><a href="COMP685">COMP685 (Computer Science Seminar)</a></li>
 	</ul>
       </div>
     </li>
@@ -204,28 +186,33 @@ Conducted research aimed at understanding the needs of end users and assisting e
       <div class="description">Tutored and assisted students enrolled in Computer Science, Calculus, and Statistics courses.</div>
     </li>
   </ul>
-  <h3>Professional</h3>
-  <ul>
-    <li class="experience vevent vcard">
+  </div>
+  <div id="etc">
+  <h2>Education</h2>
+  <ul class="vcalendar">
+    <li class="education vevent vcard">
       <object data="#joey-name" class="include"></object>
-      <span class="title summary">Intern</span>,
-      <span class="org">American Airlines Credit Union</span>, <span class="location">Dallas, TX</span>.
-      <div class="date_duration"><abbr class="dtstart" title="2003-06-01">June 2003</abbr> - <abbr class="dtend" title="2003-09-01">September 2003</abbr></div>
-      <div class="description">Revised the corporate intranet.</div>
+      <a href="http://eecs.oregonstate.edu/" class="org">Oregon State University</a>,
+      <span class="summary"><span class="title">Ph.D.</span> Computer Science</span>.
+      <span class="date_duration">
+        <abbr class="dtstart" title="2003-09-01">September 2003</abbr> - <abbr class="dtend" title="2009-06-01">June 2009</abbr>
+      </span>
     </li>
-    <li class="experience vevent vcard">
+    <li class="education vevent vcard">
       <object data="#joey-name" class="include"></object>
-      <span class="title summary">Intern</span>,
-      <span class="org">American Airlines Credit Union</span>, <span class="location">Dallas, TX</span>.
-      <div class="date_duration"><abbr class="dtstart" title="2002-06-01">June 2002</abbr> - <abbr class="dtend" title="2002-09-01">September 2002</abbr></div>
-      <div class="description">Created and deployed the corporate intranet site.</div>
+      <a href="http://eecs.oregonstate.edu/" class="org">Oregon State University</a>,
+      <span class="summary"><span class="title">Master's of Science</span> Computer Science</span>.
+      <span class="date_duration">
+        <abbr class="dtstart" title="2003-09-01">September 2003</abbr> - <abbr class="dtend" title="2005-06-01">June 2005</abbr>
+      </span>
     </li>
-    <li class="experience vevent vcard">
+    <li class="education vevent vcard">
       <object data="#joey-name" class="include"></object>
-      <span class="title summary">Web Developer</span>,
-      <span class="org">Lawrence University</span>, <span class="location">Appleton, WI</span>.
-      <div class="date_duration"><abbr class="dtstart" title="2001-06-01">June 2001</abbr> - <abbr class="dtend" title="2003-06-01">June 2003</abbr></div>
-      <div class="description">Developed a web-based catering reservation & billing system and revised the public-facing web site.</div>
+      <a href="http://www.lawrence.edu/" class="org">Lawrence University</a>,
+      <span class="summary"><span class="title">Bachelor of Arts</span> Computer Science</span>.
+      <span class="date_duration">
+        <abbr class="dtstart" title="1999-09-01">September 1999</abbr> - <abbr class="dtend" title="2003-06-01">June 2003</abbr>
+      </span>
     </li>
   </ul>
   <h2>Affiliations</h2>
@@ -237,29 +224,27 @@ Conducted research aimed at understanding the needs of end users and assisting e
   <h2>Interests</h2>
   <ul>
     <li><a rel="tag" href="http://en.wikipedia.org/wiki/Information_foraging">Information foraging</a></li>
-    <li><a rel="tag" href="http://en.wikipedia.org/wiki/Human-computer_interaction">Human-Computer Interaction</a></li>
-    <li><a rel="tag" href="http://en.wikipedia.org/wiki/Software_engineering">Software engineering</a></li>
+    <li><a rel="tag" href="http://en.wikipedia.org/wiki/Human-computer_interaction">Human-Computer Interaction</a>
+      <ul>
+        <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Card_sorting">Card sorting</a></li>
+        <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Cognitive_walkthrough">Cognitive walkthrough</a></li>
+        <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Heuristic_evaluation">Heuristic evaluation</a></li>
+        <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Paper_prototyping">Paper prototyping</a></li>
+        <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Think_aloud_protocol">Think-aloud protocol</a></li>
+      </ul>
+    </li>
+    <li><a rel="tag" href="http://en.wikipedia.org/wiki/Software_engineering">Software engineering</a>
+      <ul>
+        <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/C_%28programming_language%29">C</a></li>
+        <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/C%2B%2B">C++</a></li>
+        <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/HTML">HTML</a></li>
+        <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Java_%28programming_language%29">Java</a></li>
+        <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a></li>
+        <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Python_%28programming_language%29">Python</a></li>
+        <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/R_%28programming_language%29">R</a></li>
+      </ul>
+    </li>
   </ul>
-  <h2>Skills</h2>
-  <h3>Usability</h3>
-  <ul>
-    <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Card_sorting">Card sorting</a></li>
-    <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Cognitive_walkthrough">Cognitive walkthrough</a></li>
-    <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Heuristic_evaluation">Heuristic evaluation</a></li>
-    <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Paper_prototyping">Paper prototyping</a></li>
-    <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Think_aloud_protocol">Think-aloud protocol</a></li>
-  </ul>
-  <h3>Programming</h3>
-  <ul>
-    <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/C_%28programming_language%29">C</a></li>
-    <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/C%2B%2B">C++</a></li>
-    <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/HTML">HTML</a></li>
-    <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Java_%28programming_language%29">Java</a></li>
-    <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a></li>
-    <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/Python_%28programming_language%29">Python</a></li>
-    <li><a class="skill" rel="tag" href="http://en.wikipedia.org/wiki/R_%28programming_language%29">R</a></li>
-  </ul>
-  </div>
   <h2>Personal</h2>
   <ul>
     <li><a class="url" href="http://www.facebook.com/joey.lawrance" rel="me">Facebook profile</a></li>
@@ -268,7 +253,10 @@ Conducted research aimed at understanding the needs of end users and assisting e
     <li><a href="https://www.moonlightdesign.org/Steven_Lawrance" rel="contact sibling">Steven Lawrance, MSE</a></li>
   </ul>
 <h2>Massachusetts Districts by MCAS Proficiency Percentage</h2>
-<iframe width="500px" height="500px" scrolling="no"  src="http://www.google.com/fusiontables/embedviz?viz=MAP&q=select+col0%2C+col1%2C+col2%2C+col3%2C+col4+from+1093410+&h=false&lat=42.0615286181226&lng=-71.2738037109375&z=8&t=1&l=col0"></iframe>
+<iframe width="500px" height="500px" scrolling="no"  src="http://www.google.com/fusiontables/embedviz?viz=MAP&amp;q=select+col0%2C+col1%2C+col2%2C+col3%2C+col4+from+1093410+&amp;h=false&amp;lat=42.0615286181226&amp;lng=-71.2738037109375&amp;z=8&amp;t=1&amp;l=col0"></iframe>
+</div>
+</div>
+</div>
 
 </body>
 </html>
