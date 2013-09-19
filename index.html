@@ -26,6 +26,7 @@ $('#tabs').tabs();
   <ul>
     <li><a href="#contact-info">Overview</a></li>
     <li><a href="#classes">Classes</a></li> 
+   <li><a href="#workStudy">Work Study</a></li>
    <li><a href="#etc">Etc.</a></li>
   </ul>
   <div class="contact vcard" id="contact-info">
@@ -58,12 +59,22 @@ $('#tabs').tabs();
 </p>
 <p class="summary"><a href="resume.pdf">CV/Resume</a> (PDF)
 </p>
-  <h2>Personal</h2>
+  <h2>Family</h2>
   <ul>
     <li><a class="url" href="http://www.facebook.com/joey.lawrance" rel="me">Facebook profile</a></li>
     <li><a href="http://seikyung.com/" rel="contact spouse">Seikyung Jung, Ph.D.</a></li>
     <li><a href="http://www.the401kcpa.com/" rel="contact sibling">Michael Lawrance, CPA</a></li>
     <li><a href="https://www.moonlightdesign.org/Steven_Lawrance" rel="contact sibling">Steven Lawrance, MSE</a></li>
+  </ul>
+</div>
+<div id="workStudy">
+  <p>Looking for a work study position? Are you interested in improving existing open source software to improve the classroom experience? If so, I have some project ideas for you.</p>
+  <h2>Project ideas</h2>
+  <ul>
+    <li><a href="https://github.com/lawrancej/logisim">Logisim</a> is a useful circuit simulator useful for teaching computer architecture. Its author has moved on to other projects, but I'd like to <a href="https://github.com/lawrancej/logisim/issues">improve it</a>.</li>
+    <li>Software developers use code review systems such as <a href="http://code.google.com/p/gerrit/">Gerrit</a>, <a href="http://www.reviewboard.org/">ReviewBoard</a>, <a href="https://github.com/gitlabhq/gitlabhq">GitLab</a>, and <a href="https://github.com/facebook/phabricator">Phabricator</a> to ensure quality. <a href="http://arxiv.org/pdf/1308.5273v1.pdf">Code review can be useful in the classroom</a>, but for students to review each other's code, the review must be anonymous (double-blind): a student shouldn't know who's code he/she is reviewing, and a student shouldn't know who reviewed his/her code. Modify a code review system to support anonymous code review (or <a href="http://docs.crowdranker.org/">modify CrowdRanker</a> to support Git repositories).</li>
+    <li>The Git installer for Windows ought to configure the git user name and email address to make it easier for students to get started with git in the classroom. The installer is written with <a href="http://www.jrsoftware.org/isinfo.php">InnoSetup</a>. <a href="https://github.com/msysgit/msysgit/blob/master/share/WinGit/install.iss">Hint: this is the file that needs to change.</a></li>
+    <li>Git ought to have a way to periodically fetch automatically from all remotes.</li>
   </ul>
 </div>
 </div>
